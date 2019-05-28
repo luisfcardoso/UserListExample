@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+	<h2>
+		{{ title }}
+	</h2>
+
+	<p>
+		<label for="user">User:</label>
+		<input autofocus id="inputField" type='text' name="user" (keyup.enter)="addUser($event.target.value, inputField)">
+	</p>
+
+	<label>
+		<strong>User's List:</strong>
+	</label>
+	<br>
+	<ol>
+		<li *ngFor="let user of getUsers()">{{ user }}</li>
+	</ol>
+</div>

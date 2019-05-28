@@ -1,2 +1,0 @@
-# UserListExample
-Created with CodeSandbox
